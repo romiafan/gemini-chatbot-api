@@ -9,6 +9,86 @@ body {
   background-color: #f0f2f5;
 }
 
+/* Dark mode styles */
+.dark-mode {
+  background: #181818 !important;
+  color: #f5f5f5 !important;
+}
+
+.dark-mode .sky-bg {
+  background: linear-gradient(180deg, #222 0%, #181818 100%) !important;
+}
+
+.dark-mode .container {
+  background: #222 !important;
+  color: #f5f5f5 !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+.dark-mode .chat-box {
+  background: #181818 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #333 !important;
+}
+
+.dark-mode input[type="text"],
+.dark-mode button[type="submit"] {
+  background: #222 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode h1 {
+  color: #90cdf4 !important;
+}
+
+button#darkModeToggle {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode button#darkModeToggle {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: #181818;
+  color: #f5f5f5;
+}
+
+#chat-container.dark-mode {
+  background: #222;
+  color: #f5f5f5;
+}
+
+button#darkModeToggle {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode button#darkModeToggle {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
 .sky-bg {
   min-height: 100vh;
   background: linear-gradient(to top, #aee1f9 0%, #f7fbff 100%);

@@ -1,3 +1,28 @@
+// Improved dark mode toggle logic
+window.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  function setDarkMode(enabled) {
+    if (enabled) {
+      body.classList.add('dark-mode');
+      darkModeToggle.textContent = '☀️';
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      body.classList.remove('dark-mode');
+      darkModeToggle.textContent = '🌙';
+      localStorage.setItem('darkMode', 'false');
+    }
+  }
+
+  // Load preference
+  const darkPref = localStorage.getItem('darkMode') === 'true';
+  setDarkMode(darkPref);
+
+  darkModeToggle.addEventListener('click', () => {
+    setDarkMode(!body.classList.contains('dark-mode'));
+  });
+});
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('chat-form');
   const input = document.getElementById('user-input');
